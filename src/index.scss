@@ -1,0 +1,215 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-grid.min.css");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body {
+  background-color: #f2f2f2;
+  font-family: 'Nunito', serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+hr {
+  border-top: 1px solid #f2f2f2;
+  width: 100%;
+  margin: 0.5em 0;
+}
+
+h5 {
+  margin: 0px;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+.row{
+  height: 60em;
+  margin: 0px;
+}
+
+.container{
+  padding-left: 8em;
+  padding-right: 8em;
+  max-width: 100%;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 14em;
+  position: relative;
+  margin: 1em;
+}
+
+.show-more-box{
+  position: absolute;
+  width: inherit;
+  top: 12em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.action-link{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+.action-link:hover{
+  font-weight: 700;
+  color:#f2f2f2;
+}
+
+.action-button{
+  cursor: pointer;
+}
+
+.more{
+  display: flex;
+  align-content: center;
+}
+
+.blue-circle{
+  background-color: #33CEFF;
+  width: 8em;
+  height: 4em;
+  border-top-left-radius: 8em;
+  border-top-right-radius: 8em;
+  position: absolute;
+}
+
+.twit-icon{
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  top: -0.5em;
+}
+
+
+.blue-card {
+
+  background-color: #33CEFF;
+  height: auto;
+  width: inherit;
+  padding: 0.2em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  top: 2.2em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  overflow: hidden;
+  -webkit-box-shadow: 15px 15px 27px #e1e1e3;
+  box-shadow: 15px 15px 15px #e1e1e3;
+  color: white;
+  font-size: 0.9em;
+  z-index: 100;
+
+}
+
+.white-card {
+  position: absolute;
+  top: 0px;
+  background-color: #ffffff;
+  height: 14em;
+  width: 16em;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 16px;
+  overflow: hidden;
+  -webkit-box-shadow: 15px 15px 27px #e1e1e3;
+  box-shadow: 15px 15px 27px #e1e1e3;
+  color: grey;
+}
+
+
+.white-card>.profile-section {
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.white-card>.profile-section>.avatar {
+  margin-right: 1em;
+  width: 3.1em;
+  height: 3.1em;
+  border-radius: 5px;
+
+}
+
+.white-card>.profile-section>.info {
+  width: 100%;
+}
+
+.white-card>.profile-section>.info>.name {
+  margin: 0px;
+  font-size: 1.45em;
+  font-weight: 700;
+}
+
+
+.profile-section>.info>.user {
+  margin: 0px;
+  font-size: 0.9em;
+  font-weight: 400;
+  color: #AAB7B8;
+}
+
+.twit-section{
+  margin-top: 0.5em;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -mos-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.twit-section>.twit-text {
+  margin: 5px 0px;
+  font-size: 1.1em;
+  font-weight: 400;
+
+}
+
+
+.icon-section {
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+

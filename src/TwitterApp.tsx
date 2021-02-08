@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { TwitCard } from './components/twit-card/TwitCard';
 import { InputSearch } from './components/input-search/InputSearch';
+import TweetButton from './components/twitter-button/TweetButton';
 
  export const TwitterApp = () => {
 
@@ -19,6 +20,7 @@ import { InputSearch } from './components/input-search/InputSearch';
         <div>
             <div className="input-container">
                 <InputSearch />
+                <TweetButton />
             </div>
             <div className="row container">
                     {
